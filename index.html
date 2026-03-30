@@ -1,1 +1,59 @@
-<h1>Mi proyecto</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Club de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🎮 Club de Videojuegos</h1>
+</header>
+
+<nav>
+    <button id="btnModo">Modo Oscuro</button>
+    <button id="btnDetalle">Mostrar Detalle</button>
+</nav>
+
+<main class="grid">
+
+    <section>
+        <h2>Selecciona Plataforma</h2>
+        <select id="plataforma">
+            <option>PC</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+        </select>
+        <p id="resultado"></p>
+    </section>
+
+    <section id="detalle" class="oculto">
+        <h2>Detalle del Juego</h2>
+        <p>Aquí aparecerá información del juego</p>
+    </section>
+
+    <section>
+        <h2>Formulario</h2>
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="email" id="correo" placeholder="Correo">
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
+    </section>
+
+</main>
+
+<section>
+    <button id="btnCargar">Cargar Juegos</button>
+    <ul id="lista"></ul>
+</section>
+
+<footer>
+    <p>Proyecto RA3.5</p>
+</footer>
+
+</body>
+</html>
